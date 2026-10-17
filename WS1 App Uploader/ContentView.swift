@@ -2,20 +2,15 @@
 //  ContentView.swift
 //  WS1 App Uploader
 //
-//  Created by Chris Butigieg on 5/17/26.
+//  Preview-only thin wrapper. The real root is `RootView`.
 //
 
 import SwiftUI
 
 struct ContentView: View {
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
+        RootView()
+            .environment(AppState())
     }
 }
 
